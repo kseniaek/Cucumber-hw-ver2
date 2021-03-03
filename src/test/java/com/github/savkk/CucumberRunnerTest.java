@@ -7,7 +7,7 @@ import io.cucumber.junit.platform.engine.Cucumber;
 @CucumberOptions(
         features = "src/test/features",
         glue = "ru.savkk.test",
-        tags = "@test",
+        tags = {"@test_positive","@test_negative"},
         dryRun = false,
         strict = false
 )

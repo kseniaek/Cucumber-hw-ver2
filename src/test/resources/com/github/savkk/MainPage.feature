@@ -1,6 +1,6 @@
 Feature: Otus main page
 
-  @test
+  @test_positive
   Scenario Template: Go to the page with the list of courses
     And Click to point of menu "<menuPointName>"
     And Click to point of dropdown "<courseName>"
@@ -12,7 +12,7 @@ Feature: Otus main page
       |Курсы        |Управление        |
       |Курсы        |Инфраструктура    |
 
-  @test
+  @test_positive
   Scenario Template: Go to the page with calendar
     And Click to point of menu "<menuPointName>"
     And Click to point of dropdown "<dropdownPointName>"
@@ -21,19 +21,19 @@ Feature: Otus main page
       |menuPointName |dropdownPointName        |pageTitle             |
       |События       |Календарь мероприятий    |Календарь мероприятий |
 
-  @test
+  @test_positive
   Scenario: Go to the page with information for teachers
     And Click to point of menu "Преподавателям"
     And Click to point of dropdown "Наши преподаватели"
     Then Page with header "Преподаватели" opened
 
-  @test
+  @test_positive
   Scenario: Go to the page with information for companies
     And Click to point of menu "Компаниям"
     And Click to point of dropdown "Услуги компаниям"
     Then Page with title "OTUS готовит" opened
 
-  @test
+  @test_positive
   Scenario Template: Go to the course page from blocks
     And Click to "<courseName>" of menu "<coursesBlocks>"
     Then Page with title "<courseName>" opened
@@ -41,7 +41,7 @@ Feature: Otus main page
       |coursesBlocks   |courseName         |
       |Популярные курсы|Administrator Linux|
 
-  @test
+  @test_positive
   Scenario Template: Go to the course page from blocks
     And Click to "<courseName>" of menu "<coursesBlocks>"
     Then Page with header "<courseName>" opened

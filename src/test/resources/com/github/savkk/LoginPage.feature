@@ -1,6 +1,6 @@
 Feature: Otus login page
 
-  @test
+  @test_negative
 Scenario: an attempt to log in with invalid data
 And Click to button "Вход"
 And Fill in the field with placeholder "Электронная почта"
