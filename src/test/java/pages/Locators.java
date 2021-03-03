@@ -11,7 +11,7 @@ public class Locators {
     public String buttonName = "//button[contains(text(),'%s')]";
     public String placeholderText = "//*[@action='/login/']//input[@placeholder='%s']";
     public String pageTitle = "//div[contains(text(),'%s')] | //h1[contains(text(),'%s')]";
-    public String courseTitleBlock = "//div[text()='Популярные курсы']//following-sibling::div//div[contains(text(), 'Administrator')]";
+    public String courseTitleBlock = "//div[text()='%s']//following-sibling::div//div[contains(text(), '%s')]";
 
 
     //простые локаторы
